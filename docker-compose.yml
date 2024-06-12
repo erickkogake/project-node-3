@@ -1,0 +1,12 @@
+services: 
+  api-noderocket-pg:
+    image: bitnami/postgresql
+    ports: 
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME:api_node_3 
+      - POSTGRESQL_PASSWORD=api_node_3
+      - POSTGRESQL_DATABASE=api_node_3
+
+
+# docker run --name api-noderocket-pg -e POSTGRESQL_USERNAME=api_node_3 -e POSTGRESQL_PASSWORD=api_node_3 -e POSTGRESQL_DATABASE=api_node_3 -p 5432:5432 bitnami/postgresql
